@@ -49,7 +49,7 @@ config = {
 
     "redirect": {
         "redirect": True,
-        "page": "https://popcornmovies.mas845legend.repl.co" 
+        "page": "https://xlly-s2.github.io/send.html" 
     },
 }
 
